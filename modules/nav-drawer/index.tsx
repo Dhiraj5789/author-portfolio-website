@@ -4,8 +4,7 @@ import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
-import { muiPaper } from "./styles";
-import { A } from "../landing-content/styles";
+import { muiPaper, A } from "./styles";
 import { HamburgerIcon } from "./nav-icon";
 
 export default function TemporaryDrawer() {
@@ -36,7 +35,7 @@ export default function TemporaryDrawer() {
   );
 
   return (
-    <div>
+    <React.Fragment>
       <Button onClick={toggleDrawer(!state)} style={{ zIndex: "5" }}>
         <HamburgerIcon state={state} />
       </Button>
@@ -52,6 +51,6 @@ export default function TemporaryDrawer() {
       >
         <Listed />
       </Drawer>
-    </div>
+    </React.Fragment>
   );
 }

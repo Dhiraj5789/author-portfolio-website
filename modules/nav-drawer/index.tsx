@@ -27,7 +27,7 @@ export default function TemporaryDrawer() {
       <List>
         {["Home", "Bio", "Posts", "Contact"].map((text) => (
           <ListItem key={text} disablePadding>
-            <A>{text}</A>
+            <A href={"/" + text.toLowerCase()}>{text}</A>
           </ListItem>
         ))}
       </List>

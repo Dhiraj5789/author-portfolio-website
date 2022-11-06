@@ -7,9 +7,6 @@ import { Main } from "./styles";
 export default function Home() {
   return (
     <>
-      <nav>
-        <TemporaryDrawer />
-      </nav>
       <ProfilePitcure />
       <Main>
         <LandingContent />

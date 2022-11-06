@@ -1,15 +1,16 @@
 import styled from "@emotion/styled";
+import { DARK_BLUE, DARK_PURPLE, LIGH_BLUE } from "../colors";
 
 export const Section = styled.section`
   margin: 2rem;
   p {
-    color: #101a60;
+    color: ${DARK_BLUE};
     margin-top: 1rem;
   }
 `;
 
 export const H3 = styled.h3`
-  color: #334199;
+  color: ${DARK_PURPLE};
   font-weight: 700;
   font-style: normal;
   font-size: 17px;
@@ -27,7 +28,7 @@ export const H3 = styled.h3`
       width: calc(2 * 3vw - 17px);
       left: calc(-2 * 3vw);
       top: 8px;
-      background-color: #156dbe;
+      background-color: ${LIGH_BLUE};
       z-index: -1;
     }
   }

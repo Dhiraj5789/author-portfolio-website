@@ -1,5 +1,10 @@
 import styled from "@emotion/styled";
-import { SECONDARY_BLUE, SECONDARY_YELLOW, WHITE } from "../colors";
+import {
+  LIGHT_PURPLE,
+  SECONDARY_BLUE,
+  SECONDARY_YELLOW,
+  WHITE,
+} from "../colors";
 
 export const A = styled.a`
   color: ${SECONDARY_BLUE};
@@ -47,5 +52,5 @@ export const landingParagraph = styled.p`
   letter-spacing: -0.02em;
   text-transform: none;
   line-height: 1.5em;
-  color: #5c67ad;
+  color: ${LIGHT_PURPLE};
 `;

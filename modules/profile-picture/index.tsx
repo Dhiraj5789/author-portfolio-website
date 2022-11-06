@@ -1,4 +1,3 @@
 import { ProfilePictureContainer } from "./styles";
 
-export const ProfilePitcure = () => 
-    <ProfilePictureContainer />
+export const ProfilePitcure = () => <ProfilePictureContainer />;

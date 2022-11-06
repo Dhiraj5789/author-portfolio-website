@@ -1,6 +1,6 @@
-import Home from ".";
+import type { AppProps } from "next/app";
 import "./global.css";
 
-export const App = () => <Home />;
-
-export default App;
+export default function App({ Component, pageProps }: AppProps) {
+  return <Component {...pageProps} />;
+}

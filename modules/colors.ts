@@ -3,3 +3,7 @@ export const PRIMARY_BLUE = "#0f63cb";
 export const PRIMARY_YELLOW = "#f7eb06";
 export const SECONDARY_BLUE = "#263387";
 export const SECONDARY_YELLOW = "#f5d30f";
+export const LIGHT_PURPLE = "#5c67ad";
+export const DARK_PURPLE = "#334199";
+export const DARK_BLUE = "#101a60";
+export const LIGH_BLUE = "#156dbe";

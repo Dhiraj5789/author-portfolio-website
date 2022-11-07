@@ -1,15 +1,16 @@
-import { H3, Section } from "./styles";
+import { H2, Section } from "./styles";
 
-export const LinedHeadingSection = () => (
+export const LinedHeadingSection = ({
+  title,
+  content,
+}: {
+  title: string;
+  content: string;
+}) => (
   <Section>
-    <H3>
-      <em>The Anthropocee Reviewed </em>
-    </H3>
-    <p>
-      The Anthropocene Reviewed book is out now! The book is a a deeply moving
-      and insightful collection of personal essays from #1 bestselling author
-      John Green, adapted from his critically acclaimed podcast The Anthropocene
-      Reviewed. Available now.
-    </p>
+    <H2>
+      <em>{title}</em>
+    </H2>
+    <p>{content}</p>
   </Section>
 );

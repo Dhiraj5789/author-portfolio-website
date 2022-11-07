@@ -1,18 +1,17 @@
 import { LandingContent } from "../../modules/landing-content";
+import { HomePageData } from "../../data";
 import { LinedHeadingSection } from "../../modules/lined-section";
-import { ProfilePitcure } from "../../modules/profile-picture";
-import { Main } from "../styles";
 
 export default function Home() {
   return (
     <>
-      <ProfilePitcure />
-      <Main>
-        <LandingContent />
-        <LinedHeadingSection />
-        <LinedHeadingSection />
-        <LinedHeadingSection />
-      </Main>
+      <LandingContent data={HomePageData.LandingPara} />
+      {HomePageData.Sections.map((section) => {
+        const { title, paragraph } = section;
+        return (
+          <LinedHeadingSection key={title} title={title} content={paragraph} />
+        );
+      })}
     </>
   );
 }

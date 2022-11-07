@@ -36,15 +36,3 @@ h3>em{
     font-style: normal;
     position: relative;
 }
-
-em::before{
-    position: absolute;
-    display: block;
-    content: '';
-    height: 3px;
-    width: calc(2 * 3vw - 17px);
-    left: calc(-2 * 3vw);
-    top: 8px;
-    background-color: #156dbe;
-    z-index: -1;
-}

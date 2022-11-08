@@ -12,7 +12,7 @@ export const Section = styled.section`
   }
 `;
 
-export const H2 = styled.h3`
+export const H2 = styled.h2`
   color: ${DARK_PURPLE};
   font-weight: 700;
   font-style: normal;

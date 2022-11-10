@@ -1,7 +1,6 @@
 import { AUTHOR } from "../../data";
 import { H2 } from "../../modules/lined-section/styles";
 import { ProfilePictureContainer } from "../../modules/profile-picture/styles";
-import { Main } from "../styles";
 import { H3, Section } from "./styles";
 
 export default function () {

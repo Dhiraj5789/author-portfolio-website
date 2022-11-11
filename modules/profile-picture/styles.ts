@@ -8,7 +8,7 @@ export const ProfilePictureContainer = styled.aside`
   width: 50%;
   height: 100vh;
   background-color: ${PRIMARY_BLUE};
-  @media (max-width: 420px) {
+  @media (max-width: 655px) {
     display: none;
   }
 `;

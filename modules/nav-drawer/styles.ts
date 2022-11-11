@@ -8,7 +8,7 @@ export const muiPaper = css`
   z-index: auto;
   width: 50vw;
   padding: 3vw 17px;
-  @media (max-width: 420px) {
+  @media (max-width: 655px) {
     width: 100%;
   }
 `;

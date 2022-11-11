@@ -4,7 +4,7 @@ export const Main = styled.main`
   position: absolute;
   width: 50vw;
   left: 50vw;
-  @media (max-width: 420px) {
+  @media (max-width: 655px) {
     width: 100vw;
     left: 0;
   }

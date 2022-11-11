@@ -7,7 +7,7 @@ export const Section = styled.section`
     color: ${DARK_BLUE};
     margin-top: 1rem;
   }
-  @media (max-width: 420px) {
+  @media (max-width: 655px) {
     margin: 2rem 0.5rem;
   }
 `;
@@ -33,7 +33,7 @@ export const H2 = styled.h2`
       top: 8px;
       background-color: ${LIGH_BLUE};
       z-index: -1;
-      @media (max-width: 420px) {
+      @media (max-width: 655px) {
         width: 0;
       }
     }

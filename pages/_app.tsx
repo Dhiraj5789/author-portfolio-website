@@ -5,12 +5,14 @@ import "./global.css";
 import { Main } from "./styles";
 
 export default function App({ Component, pageProps }: AppProps) {
+  console.log(pageProps);
+  const { profilePictureProp } = pageProps;
   return (
     <>
       <nav>
         <TemporaryDrawer />
       </nav>
-      <ProfilePitcure />
+      <ProfilePitcure profilePictureProp={profilePictureProp} />
       <Main>
         <Component {...pageProps} />
       </Main>

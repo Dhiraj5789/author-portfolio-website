@@ -19,5 +19,4 @@ export const H3 = styled.h3`
   color: ${LIGH_BLUE};
   font-style: italic;
   margin: 1rem 0;
-  text-rendering: optimizeLegibility;
 `;

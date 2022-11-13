@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { DARK_BLUE, LIGH_BLUE } from "../../modules/colors";
+import { DARK_BLUE, LIGHT_BLUE } from "../../modules/colors";
 
 export const Section = styled.section`
   margin: 15% 10%;
@@ -16,7 +16,7 @@ export const H3 = styled.h3`
   letter-spacing: 0px;
   text-transform: none;
   line-height: 1.4em;
-  color: ${LIGH_BLUE};
+  color: ${LIGHT_BLUE};
   font-style: italic;
   margin: 1rem 0;
 `;

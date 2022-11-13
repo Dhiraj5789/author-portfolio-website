@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { DARK_BLUE, DARK_PURPLE, LIGH_BLUE } from "../colors";
+import { DARK_BLUE, DARK_PURPLE, LIGHT_BLUE } from "../colors";
 
 export const Section = styled.section`
   margin: 2rem;
@@ -31,7 +31,7 @@ export const H2 = styled.h2`
       width: calc(2 * 3vw - 17px);
       left: calc(-2 * 3vw);
       top: 8px;
-      background-color: ${LIGH_BLUE};
+      background-color: ${LIGHT_BLUE};
       z-index: -1;
       @media (max-width: 655px) {
         width: 0;

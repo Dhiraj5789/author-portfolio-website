@@ -6,4 +6,4 @@ export const SECONDARY_YELLOW = "#f5d30f";
 export const LIGHT_PURPLE = "#5c67ad";
 export const DARK_PURPLE = "#334199";
 export const DARK_BLUE = "#101a60";
-export const LIGH_BLUE = "#156dbe";
+export const LIGHT_BLUE = "#156dbe";

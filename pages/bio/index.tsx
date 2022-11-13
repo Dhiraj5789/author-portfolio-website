@@ -6,7 +6,7 @@ import { H3, Section } from "./styles";
 export default function () {
   return (
     <>
-      <ProfilePictureContainer />
+      <ProfilePictureContainer backgroundType="default" />
       <Section>
         <H2>
           <em>About {AUTHOR}</em>

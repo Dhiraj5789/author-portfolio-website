@@ -1,4 +1,4 @@
-import { PostsContainer } from "./styles";
+import { PostsContainer } from "../../modules/common-styles";
 
 export default function Posts() {
   const instagramPostsLinks = [

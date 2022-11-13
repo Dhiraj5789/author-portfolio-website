@@ -1,11 +1,11 @@
-import { Article } from "../landing-styles";
 import {
-  landingSection as LandingSection,
-  landingParagraph as Paragraph,
-  A,
+  Article,
+  LandingSection,
+  LandingParagraph,
+  LandingLink,
 } from "./styles";
 
-export const LandingContent = ({ data }: { data: string }) => {
+export const LandingContent = () => {
   const booksWritten = [
     "Looking for Alaska",
     "An Abundance of Katherines",
@@ -17,20 +17,25 @@ export const LandingContent = ({ data }: { data: string }) => {
   return (
     <LandingSection>
       <Article>
-        <Paragraph>
+        <LandingParagraph>
           John Green is the New York Times bestselling author of{" "}
           {booksWritten.map((book, idx) => {
             const bookName =
-              idx === booksWritten.length - 1 ? ` and ${book}.` : ` ${book},`;
-            return <A>{bookName}</A>;
+              idx === booksWritten.length - 1 ? `and ${book}.` : ` ${book},`;
+            return (
+              <>
+                {" "}
+                <LandingLink>{bookName}</LandingLink>
+              </>
+            );
           })}{" "}
           He is one half of the vlogbrothers on YouTube and co-creator of
           educational series Crash Course.
-        </Paragraph>
+        </LandingParagraph>
         <br />
-        <Paragraph>
-          <A>More about John</A>
-        </Paragraph>
+        <LandingParagraph>
+          <LandingLink>More about John</LandingLink>
+        </LandingParagraph>
       </Article>
     </LandingSection>
   );

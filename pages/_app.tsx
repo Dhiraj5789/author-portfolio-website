@@ -1,18 +1,24 @@
 import type { AppProps } from "next/app";
+import { Main, Aside } from "../modules/common-styles";
 import TemporaryDrawer from "../modules/nav-drawer";
-import { ProfilePitcure } from "../modules/profile-picture";
 import "./global.css";
-import { Main } from "./styles";
 
 export default function App({ Component, pageProps }: AppProps) {
-  console.log(pageProps);
-  const { profilePictureProp } = pageProps;
+  const { pageType } = pageProps;
+  let asideChildren;
+  switch (pageType) {
+    case "contact":
+      asideChildren = <>Contact</>;
+      break;
+    default:
+      asideChildren = <>Home</>;
+  }
   return (
     <>
       <nav>
         <TemporaryDrawer />
       </nav>
-      <ProfilePitcure profilePictureProp={profilePictureProp} />
+      <Aside pageType={pageType}>{asideChildren}</Aside>
       <Main>
         <Component {...pageProps} />
       </Main>

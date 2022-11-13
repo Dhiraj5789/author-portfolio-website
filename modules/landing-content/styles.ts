@@ -6,7 +6,33 @@ import {
   WHITE,
 } from "../colors";
 
-export const A = styled.a`
+export const Article = styled.article`
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+`;
+
+export const LandingSection = styled.section`
+  text-align: center;
+  margin: auto;
+  max-width: 500px;
+`;
+
+export const LandingParagraph = styled.p`
+  font-weight: 700;
+  font-style: normal;
+  font-size: 27px;
+  letter-spacing: -0.02em;
+  text-transform: none;
+  line-height: 1.5em;
+  color: ${LIGHT_PURPLE};
+`;
+
+export const LandingLink = styled.a`
   color: ${SECONDARY_BLUE};
   text-decoration: none;
   text-shadow: 0.03em 0 ${WHITE}, -0.03em 0 ${WHITE}, 0 0.03em ${WHITE},
@@ -37,20 +63,4 @@ export const A = styled.a`
       -0.06em 0 0 0.06em ${SECONDARY_YELLOW};
     cursor: pointer;
   }
-`;
-
-export const landingSection = styled.section`
-  text-align: center;
-  margin: auto;
-  max-width: 500px;
-`;
-
-export const landingParagraph = styled.p`
-  font-weight: 700;
-  font-style: normal;
-  font-size: 27px;
-  letter-spacing: -0.02em;
-  text-transform: none;
-  line-height: 1.5em;
-  color: ${LIGHT_PURPLE};
 `;

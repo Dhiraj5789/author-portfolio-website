@@ -1,14 +1,9 @@
-import { HomePageData } from "../data";
-import { LandingContent } from "../modules/landing-content";
-import { LinedHeadingSection } from "../modules/lined-section";
-import TemporaryDrawer from "../modules/nav-drawer";
-import { ProfilePitcure } from "../modules/profile-picture";
-import { Main } from "./styles";
+import Home from "./home";
 
-export default function Home() {
+export default function App() {
   return (
     <>
-      <LandingContent data={HomePageData.LandingPara} />
+      <Home />
     </>
   );
 }

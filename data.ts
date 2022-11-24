@@ -1,4 +1,4 @@
-export const AUTHOR = "John Green";
+export const AUTHOR = "Manisha Mistry";
 
 export const HomePageData = {
   LandingPara:

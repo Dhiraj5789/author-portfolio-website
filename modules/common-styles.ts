@@ -1,5 +1,13 @@
 import styled from "@emotion/styled";
-import { DARK_BLUE, DARK_PURPLE, LIGHT_BLUE, PRIMARY_BLUE } from "./colors";
+import {
+  DARK_BLUE,
+  DARK_PURPLE,
+  LIGHT_BLUE,
+  PRIMARY_BLUE,
+  PRIMARY_YELLOW,
+  SECONDARY_BLUE,
+  SECONDARY_YELLOW,
+} from "./colors";
 import { AsideContainerProps } from "./types";
 
 export const Aside = styled.aside<AsideContainerProps>`
@@ -8,10 +16,16 @@ export const Aside = styled.aside<AsideContainerProps>`
   top: 0;
   width: 50%;
   height: 100vh;
-  background: ${(props) => (!!props.pageType ? PRIMARY_BLUE : "turquoise")};
+  background: ${(props) => (!!props.pageType ? PRIMARY_BLUE : PRIMARY_BLUE)};
   @media (max-width: 655px) {
     display: none;
   }
+`;
+
+export const H1 = styled.h1`
+  font-size: 40px;
+  font-family: "Lato", sans-serif;
+  color: ${PRIMARY_YELLOW};
 `;
 
 export const Main = styled.main`
@@ -28,7 +42,7 @@ export const LinedH2 = styled.h2`
   color: ${DARK_PURPLE};
   font-weight: 700;
   font-style: normal;
-  font-size: 17px;
+  font-size: 19px;
   letter-spacing: 0px;
   text-transform: none;
   line-height: 1.2em;
@@ -49,6 +63,16 @@ export const LinedH2 = styled.h2`
         width: 0;
       }
     }
+  }
+  strong {
+    background-color: ${SECONDARY_YELLOW};
+    color: ${SECONDARY_BLUE};
+    font-size: 1.3em;
+    text-decoration: underline;
+    background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    box-shadow: 0.06em 0 0 0.06em ${SECONDARY_YELLOW},
+      -0.06em 0 0 0.06em ${SECONDARY_YELLOW};
+    margin-left: 0.5rem;
   }
 `;
 

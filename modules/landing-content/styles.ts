@@ -7,7 +7,7 @@ import {
 } from "../colors";
 
 export const Article = styled.article`
-  height: 100vh;
+  height: 77vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,7 +25,7 @@ export const LandingSection = styled.section`
 export const LandingParagraph = styled.p`
   font-weight: 700;
   font-style: normal;
-  font-size: 27px;
+  font-size: 22px;
   letter-spacing: -0.02em;
   text-transform: none;
   line-height: 1.5em;

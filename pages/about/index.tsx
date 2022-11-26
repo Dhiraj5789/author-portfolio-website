@@ -44,6 +44,9 @@ export default function Bio() {
       </CommonSection>
 
       <SectionLarge>
+        <ResponsiveImage src="https://ucarecdn.com/0c8d5b0e-5d5e-410e-8528-984c7f93f376/Unknown.jpeg" />
+      </SectionLarge>
+      <SectionLarge>
         <ResponsiveImage src="https://ucarecdn.com/e540a55d-41d2-4d27-a4e0-26567961a631/Unknown1.jpeg" />
       </SectionLarge>
     </>

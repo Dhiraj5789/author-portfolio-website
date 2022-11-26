@@ -47,6 +47,7 @@ export const translateLine2 = css`
 
 export const A = styled.a`
   color: ${WHITE};
+  font-family: "Lato";
   font-weight: 700;
   font-style: normal;
   font-size: 33px;

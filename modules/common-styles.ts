@@ -83,6 +83,17 @@ export const LinedH2 = styled.h2`
   strong {
     ${strongCss};
   }
+  a {
+    text-decoration: none;
+    font-style: italic;
+    padding-left: 1rem;
+    color: black;
+    font-family: "Lato";
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: #61d11f;
+    }
+  }
 `;
 
 export const H3 = styled.h3`

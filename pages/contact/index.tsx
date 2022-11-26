@@ -1,3 +1,6 @@
+import PhoneIcon from "@mui/icons-material/Phone";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import EmailIcon from "@mui/icons-material/Email";
 import {
   H3,
   LinedH2,
@@ -10,57 +13,41 @@ export default function Contact() {
     <>
       <SectionLarge>
         <H3>
-          Hi. John here. The best way to contact me depends upon the nature of
-          your inquiry. So…
+          Hi. Manisha here. The best way to contact me depends upon the nature
+          of your inquiry. So…
         </H3>
       </SectionLarge>
 
       <CommonSection>
         <LinedH2>
-          <em>Press & publicity</em>
+          <em>
+            <PhoneIcon />
+            <a href="tel:+919351016845">+919351016845</a>
+          </em>
         </LinedH2>
-
-        <p>
-          Questions about press and publicity should be directed to Elyse
-          Marshall, whose email address is emarshall((@))penguinrandomhouse.com,
-          except obviously without the parentheses.
-        </p>
       </CommonSection>
-
       <CommonSection>
         <LinedH2>
-          <em>Press & publicity</em>
+          <em>
+            <InstagramIcon />
+            <a
+              href="https://www.instagram.com/ca_manisha.mistry.908/"
+              target="blank"
+            >
+              ca_manisha.mistry.908
+            </a>
+          </em>
         </LinedH2>
-
-        <p>
-          Questions about press and publicity should be directed to Elyse
-          Marshall, whose email address is emarshall((@))penguinrandomhouse.com,
-          except obviously without the parentheses.
-        </p>
       </CommonSection>
-
       <CommonSection>
         <LinedH2>
-          <em>Press & publicity</em>
+          <em>
+            <EmailIcon />
+            <a href="mailto:mmistry9117@gmail.com" target="blank">
+              mmistry9117@gmail.com
+            </a>
+          </em>
         </LinedH2>
-
-        <p>
-          Questions about press and publicity should be directed to Elyse
-          Marshall, whose email address is emarshall((@))penguinrandomhouse.com,
-          except obviously without the parentheses.
-        </p>
-      </CommonSection>
-
-      <CommonSection>
-        <LinedH2>
-          <em>Press & publicity</em>
-        </LinedH2>
-
-        <p>
-          Questions about press and publicity should be directed to Elyse
-          Marshall, whose email address is emarshall((@))penguinrandomhouse.com,
-          except obviously without the parentheses.
-        </p>
       </CommonSection>
     </>
   );

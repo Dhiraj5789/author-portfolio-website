@@ -6,7 +6,7 @@ import {
   LinedH2,
   SectionLarge,
 } from "../../modules/common-styles";
-import Bio from "../bio";
+import Bio from "../about";
 
 export default function Home() {
   return (
@@ -48,9 +48,6 @@ export default function Home() {
           really not required. But today to cope up with the fast moving pace of
           life, it is necessary to take a pause, deep breath and gain a better
           understanding of life.{" "}
-        </p>
-        <p>
-          When things are sorted in mind things are definitely sorted in life.
         </p>
         <p>
           {" "}

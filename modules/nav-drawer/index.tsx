@@ -25,7 +25,7 @@ export default function TemporaryDrawer() {
   const Listed = () => (
     <Box>
       <List>
-        {["Home", "Bio", "Posts", "Contact"].map((text) => (
+        {["Home", "About", "Bio", "Posts", "Contact"].map((text) => (
           <ListItem key={text} disablePadding>
             <A href={"/" + text.toLowerCase()}>{text}</A>
           </ListItem>

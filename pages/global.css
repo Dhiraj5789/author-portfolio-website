@@ -12,3 +12,7 @@ nav{
     right: 3%;
     top: 5%;
 }
+
+p>em{
+  color: #61d11f;
+}

@@ -21,6 +21,12 @@ export default function App({ Component, pageProps }: AppProps) {
     default:
       asideChildren = "Home";
   }
+
+  function capitalize(str) {
+    const s = str || "Home";
+    return s.charAt(0).toUpperCase() + s.slice(1);
+  }
+
   return (
     <>
       <Head>
@@ -36,7 +42,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </nav>
       <Aside pageType={pageType}>
         <Article>
-          <H1>{asideChildren}</H1>
+          <H1>{capitalize(pageType)}</H1>
         </Article>
       </Aside>
       <Main>

@@ -1,3 +1,4 @@
+import { css } from "@emotion/css";
 import styled from "@emotion/styled";
 import {
   DARK_BLUE,
@@ -38,6 +39,21 @@ export const Main = styled.main`
   }
 `;
 
+export const strongCss = css`
+  background-color: ${SECONDARY_YELLOW};
+  color: ${SECONDARY_BLUE};
+  font-size: 1.3em;
+  text-decoration: underline;
+  background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+  box-shadow: 0.06em 0 0 0.06em ${SECONDARY_YELLOW},
+    -0.06em 0 0 0.06em ${SECONDARY_YELLOW};
+  margin-left: 0.5rem;
+`;
+
+export const Strong = styled.strong`
+  ${strongCss}
+`;
+
 export const LinedH2 = styled.h2`
   color: ${DARK_PURPLE};
   font-weight: 700;
@@ -65,14 +81,7 @@ export const LinedH2 = styled.h2`
     }
   }
   strong {
-    background-color: ${SECONDARY_YELLOW};
-    color: ${SECONDARY_BLUE};
-    font-size: 1.3em;
-    text-decoration: underline;
-    background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
-    box-shadow: 0.06em 0 0 0.06em ${SECONDARY_YELLOW},
-      -0.06em 0 0 0.06em ${SECONDARY_YELLOW};
-    margin-left: 0.5rem;
+    ${strongCss};
   }
 `;
 
@@ -123,4 +132,9 @@ export const PostsContainer = styled.section`
       height: 25rem;
     }
   }
+`;
+
+export const ResponsiveImage = styled.img`
+  width: 100%;
+  height: 30vw;
 `;

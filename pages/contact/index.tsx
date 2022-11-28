@@ -58,6 +58,6 @@ export default function Contact() {
 export async function getServerSideProps() {
   const pageType = "contact";
   return {
-    props: { pageType }, // will be passed to the aside component as props
+    props: { pageType },
   };
 }

@@ -6,12 +6,17 @@ import {
 } from "../../modules/common-styles";
 import { About, Eductation } from "../../modules/constants";
 
+export interface IDegree {
+  certificate: string;
+  institute: string;
+}
+
 export default function Bio() {
   return (
     <>
       <SectionLarge>
         <H3>About</H3>
-        {About.map((about) => (
+        {About.map((about: string) => (
           <LinedH2>
             <em>{about}</em>
           </LinedH2>
@@ -19,7 +24,7 @@ export default function Bio() {
       </SectionLarge>
       <SectionLarge>
         <H3>Education</H3>
-        {Eductation.map((degree) => (
+        {Eductation.map((degree: IDegree) => (
           <>
             <LinedH2>
               <em>{degree.certificate}</em>

@@ -37,9 +37,11 @@ export default function App({ Component, pageProps }: AppProps) {
           rel="stylesheet"
         />
       </Head>
-      <nav>
-        <TemporaryDrawer />
-      </nav>
+      <header>
+        <nav>
+          <TemporaryDrawer />
+        </nav>
+      </header>
       <Aside pageType={pageType}>
         <Article>
           <H1>{capitalize(pageType)}</H1>

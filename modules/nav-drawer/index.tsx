@@ -1,4 +1,4 @@
-import * as React from "react";
+import { Fragment, useState } from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
@@ -8,7 +8,7 @@ import { muiPaper, A } from "./styles";
 import { HamburgerIcon } from "./nav-icon";
 
 export default function TemporaryDrawer() {
-  const [state, setState] = React.useState(false);
+  const [state, setState] = useState(false);
 
   const toggleDrawer =
     (open: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
@@ -35,7 +35,7 @@ export default function TemporaryDrawer() {
   );
 
   return (
-    <React.Fragment>
+    <Fragment>
       <Button onClick={toggleDrawer(!state)} style={{ zIndex: "5" }}>
         <HamburgerIcon state={state} />
       </Button>
@@ -51,6 +51,6 @@ export default function TemporaryDrawer() {
       >
         <Listed />
       </Drawer>
-    </React.Fragment>
+    </Fragment>
   );
 }

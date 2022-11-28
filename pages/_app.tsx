@@ -1,7 +1,7 @@
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { Main, Aside, H1 } from "../modules/common-styles";
-import { Article } from "../modules/landing-content/styles";
+import { Article } from "../modules/common-styles";
 import TemporaryDrawer from "../modules/nav-drawer";
 import "./global.css";
 

@@ -49,20 +49,21 @@ export default function Bio() {
         were some of the techniques I used and they helped me reach my
         destination.
       </p>{" "}
-      <p></p>
-      My story would be incomplete if I did not mention about my father here. He
-      was the one person who constantly supported me all in this journey. These
-      were the three things he would tell me every time we happened to talk to
-      each other- Manisha don’t quit…… Your life will change once you complete
-      it……. Oversee the obstacles that will come in your way……...
+      <p>
+        My story would be incomplete if I did not mention about my father here.
+        He was the one person who constantly supported me all in this journey.
+        These were the three things he would tell me every time we happened to
+        talk to each other- Manisha don't quit…… Your life will change once you
+        complete it……. Oversee the obstacles that will come in your way……...
+      </p>
       <p>
         And here I am…<i>CA MANISHA MISTRY</i> People have changed because I
         changed my perception, attitude towards them.
         <br />
         <em>
-          Today I ‘am on a mission to help CA students overcome their fear,
-          boost their confidence and to hand hold them and help study better
-          with awesome study tips and tricks.
+          Today I'am on a mission to help CA students overcome their fear, boost
+          their confidence and to hand hold them and help study better with
+          awesome study tips and tricks.
         </em>{" "}
       </p>
       <p>
@@ -78,6 +79,6 @@ export default function Bio() {
 export async function getServerSideProps() {
   const pageType = "bio";
   return {
-    props: { pageType }, // will be passed to the aside component as props
+    props: { pageType },
   };
 }

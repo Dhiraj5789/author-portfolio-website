@@ -19,7 +19,22 @@ export const Aside = styled.aside<AsideContainerProps>`
   height: 100vh;
   background: ${(props) => (!!props.pageType ? PRIMARY_BLUE : PRIMARY_BLUE)};
   @media (max-width: 655px) {
-    display: none;
+    position: relative;
+    height: 10vh;
+    width: 100%;
+  }
+`;
+
+export const Article = styled.article`
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  @media (max-width: 655px) {
+    height: 10vh;
+    width: 100%;
   }
 `;
 
@@ -86,12 +101,14 @@ export const LinedH2 = styled.h2`
   a {
     text-decoration: none;
     font-style: italic;
-    padding-left: 1rem;
     color: black;
     font-family: "Lato";
     &:hover {
       text-decoration: underline;
       text-decoration-color: #61d11f;
+    }
+    svg {
+      margin-right: 0.8rem;
     }
   }
 `;
@@ -120,7 +137,7 @@ export const SectionLarge = styled.section`
   margin: 15% 10% 10%;
   p {
     color: ${DARK_BLUE};
-    margin-top: 1rem;
+    margin: 0.25rem 0 1.5rem;
   }
 `;
 
@@ -148,4 +165,5 @@ export const PostsContainer = styled.section`
 export const ResponsiveImage = styled.img`
   width: 100%;
   height: 30vw;
+  margin-bottom: 5rem;
 `;

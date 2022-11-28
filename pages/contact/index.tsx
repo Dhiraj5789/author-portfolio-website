@@ -21,19 +21,21 @@ export default function Contact() {
       <CommonSection>
         <LinedH2>
           <em>
-            <PhoneIcon />
-            <a href="tel:+919351016845">+919351016845</a>
+            <a href="tel:+919351016845">
+              <PhoneIcon />
+              +919351016845
+            </a>
           </em>
         </LinedH2>
       </CommonSection>
       <CommonSection>
         <LinedH2>
           <em>
-            <InstagramIcon />
             <a
               href="https://www.instagram.com/ca_manisha.mistry.908/"
               target="blank"
             >
+              <InstagramIcon />
               ca_manisha.mistry.908
             </a>
           </em>
@@ -42,8 +44,8 @@ export default function Contact() {
       <CommonSection>
         <LinedH2>
           <em>
-            <EmailIcon />
             <a href="mailto:mmistry9117@gmail.com" target="blank">
+              <EmailIcon />
               mmistry9117@gmail.com
             </a>
           </em>

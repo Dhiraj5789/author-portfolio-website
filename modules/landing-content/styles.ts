@@ -6,16 +6,6 @@ import {
   WHITE,
 } from "../colors";
 
-export const Article = styled.article`
-  height: 77vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-`;
-
 export const LandingSection = styled.section`
   text-align: center;
   margin: auto;

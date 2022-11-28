@@ -1,12 +1,4 @@
-import { LandingContent } from "../../modules/landing-content";
-import Title from "author-portfolio-website/pages/home/title.png";
-import {
-  CommonSection,
-  H3,
-  LinedH2,
-  SectionLarge,
-} from "../../modules/common-styles";
-import Bio from "../about";
+import { H3, SectionLarge } from "../../modules/common-styles";
 
 export default function Home() {
   return (
@@ -18,21 +10,6 @@ export default function Home() {
         height="150px"
       />
       <SectionLarge>
-        {/* <LinedH2>
-        <em>
-          About <strong>{AUTHOR}</strong>
-        </em>
-      </LinedH2> */}
-        {/* <H3>
-        John Green is the #1 New York Times bestselling author of Looking for
-        Alaska, An Abundance of Katherines, Paper Towns, The Fault in Our Stars,
-        and Turtles All the Way Down. He is also the coauthor, with David
-        Levithan, of Will Grayson, Will Grayson. He was the 2006 recipient of
-        the Michael L. Printz Award, a 2009 Edgar Award winner, and has twice
-        been a finalist for the Los Angeles Times Book Prize. Green’s books have
-        been published in more than 55 languages and over 24 million copies are
-        in print.
-      </H3> */}
         <H3>
           When things are sorted in mind things are definitely sorted in life.
         </H3>
@@ -60,43 +37,7 @@ export default function Home() {
           I honour your decision and commitment. With deep love and endless
           appreciation appreciation
         </p>
-        <br />
-        <br />
       </SectionLarge>
-      {/* <LandingContent />
-      <CommonSection>
-        <LinedH2>
-          <em>Press & publicity</em>
-        </LinedH2>
-
-        <p>
-          Questions about press and publicity should be directed to Elyse
-          Marshall, whose email address is emarshall((@))penguinrandomhouse.com,
-          except obviously without the parentheses.
-        </p>
-      </CommonSection>
-      <CommonSection>
-        <LinedH2>
-          <em>Press & publicity</em>
-        </LinedH2>
-
-        <p>
-          Questions about press and publicity should be directed to Elyse
-          Marshall, whose email address is emarshall((@))penguinrandomhouse.com,
-          except obviously without the parentheses.
-        </p>
-      </CommonSection>
-      <CommonSection>
-        <LinedH2>
-          <em>Press & publicity</em>
-        </LinedH2>
-
-        <p>
-          Questions about press and publicity should be directed to Elyse
-          Marshall, whose email address is emarshall((@))penguinrandomhouse.com,
-          except obviously without the parentheses.
-        </p>
-      </CommonSection> */}
     </>
   );
 }

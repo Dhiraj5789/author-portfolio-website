@@ -1,9 +1,5 @@
-import {
-  Article,
-  LandingSection,
-  LandingParagraph,
-  LandingLink,
-} from "./styles";
+import { Article } from "../common-styles";
+import { LandingSection, LandingParagraph, LandingLink } from "./styles";
 
 export const LandingContent = () => {
   const booksWritten = [
